@@ -1,4 +1,14 @@
-const mango = {
+interface Member {
+  name: string;
+  age: number;
+  email: string;
+  address?: {
+    city: string;
+    country: string;
+  };
+}
+
+const mango: Member = {
   name: "Mango",
   age: 30,
   email: "john@example.com",
@@ -8,7 +18,7 @@ const mango = {
   },
 };
 
-const poly = {
+const poly: Member = {
   name: "Mango",
   age: 30,
   email: "john@example.com",
